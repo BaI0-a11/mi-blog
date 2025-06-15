@@ -5,62 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Apps para Tareas Escolares</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 700px; margin: auto; padding: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background: #f5f5f5;
+        }
+        .ad-lateral {
+            width: 160px;
+            padding: 10px;
+            background: #fff;
+            border-right: 1px solid #ddd;
+            text-align: center;
+        }
+        .ad-lateral.right {
+            border-right: none;
+            border-left: 1px solid #ddd;
+        }
+        .ad-lateral p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .contenido {
+            flex: 1;
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+        }
         header { text-align: center; }
         h1 { color: #2c3e50; }
-        nav a { margin: 0 10px; text-decoration: none; color: #3498db; }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #3498db;
+        }
         section { margin-top: 20px; }
-        footer { margin-top: 40px; font-size: 0.9em; color: #888; text-align: center; }
-        .ad { border: 1px solid #ccc; padding: 10px; text-align: center; margin: 20px 0; background: #f9f9f9;}
-        a.button { display: inline-block; background: #3498db; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #888;
+            text-align: center;
+        }
+        .ad {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            margin: 20px 0;
+            background: #f9f9f9;
+        }
+        a.button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Apps para Tareas Escolares</h1>
-    <p>Guías, IA y herramientas para estudiantes modernos</p>
-    <nav>
-        <a href="#articulos">Artículos</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
-
-<section id="articulos">
-    <h2>Artículos destacados</h2>
-    <article>
-        <h3>Cómo usar ChatGPT para hacer tareas sin copiar</h3>
-        <p>Aprende a aprovechar la inteligencia artificial para ayudarte a estudiar sin riesgos de plagio.</p>
-        <a href="#" class="button">Leer más</a>
-    </article>
-    <article>
-        <h3>Las mejores apps gratuitas para hacer trabajos desde tu Chromebook</h3>
-        <p>Conoce las aplicaciones que te harán la vida más fácil a la hora de estudiar.</p>
-        <a href="#" class="button">Leer más</a>
-    </article>
-</section>
-
-<div class="ad">
-    <!-- Aquí iría el código de Google AdSense o cualquier anuncio -->
-    <p>Anuncio publicitario</p>
+<div class="ad-lateral">
+    <!-- Anuncio lateral izquierdo -->
+    <p>Anuncio lateral 1</p>
 </div>
 
-<section id="afiliados">
-    <h2>Recomendaciones de productos</h2>
-    <ul>
-        <li><a href="TU_ENLACE_AFILIADO_1" target="_blank">Canva: Diseña tus trabajos fácilmente</a></li>
-        <li><a href="TU_ENLACE_AFILIADO_2" target="_blank">Amazon: Compra útiles escolares con descuento</a></li>
-    </ul>
-</section>
+<div class="contenido">
+    <header>
+        <h1>Apps para Tareas Escolares</h1>
+        <p>Guías, IA y herramientas para estudiantes modernos</p>
+        <nav>
+            <a href="#articulos">Artículos</a>
+        </nav>
+    </header>
 
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Tienes dudas? Escríbeme a: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
-</section>
+    <section id="articulos">
+        <h2>Artículos destacados</h2>
+        <article>
+            <h3>Cómo usar ChatGPT para hacer tareas sin copiar</h3>
+            <p>Aprende a aprovechar la inteligencia artificial para ayudarte a estudiar sin riesgos de plagio.</p>
+            <a href="#" class="button">Leer más</a>
+        </article>
+        <article>
+            <h3>Las mejores apps gratuitas para hacer trabajos desde tu Chromebook</h3>
+            <p>Conoce las aplicaciones que te harán la vida más fácil a la hora de estudiar.</p>
+            <a href="#" class="button">Leer más</a>
+        </article>
+    </section>
 
-<footer>
-    <p>© 2025 Apps para Tareas Escolares - Todos los derechos reservados</p>
-</footer>
+    <div class="ad">
+        <!-- Aquí iría un anuncio dentro del contenido -->
+        <p>Anuncio publicitario</p>
+    </div>
 
-</body>
-</html>
+    <section id="afiliados">
+        <h2>Recomendaciones de productos</h2>
+        <ul>
