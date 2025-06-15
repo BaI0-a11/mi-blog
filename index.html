@@ -66,19 +66,15 @@
   </style>
   <script>
     function toggleLeerMas(id) {
-      var elem = document.getElementById(id);
-      if (elem.style.display === "none") {
-        elem.style.display = "block";
-      } else {
-        elem.style.display = "none";
-      }
+      const elem = document.getElementById(id);
+      elem.style.display = (elem.style.display === "none" || elem.style.display === "") ? "block" : "none";
     }
   </script>
 </head>
 <body>
 
   <div class="ad-lateral">
-    <!-- Anuncio lateral izquierdo -->
+    <!-- Espacio para anuncio izquierdo -->
     <p>Espacio para anuncio</p>
   </div>
 
@@ -93,36 +89,28 @@
 
       <article>
         <h3>Las mejores apps para organizar tus tareas y trabajos</h3>
-        <p>Si te cuesta mantener un seguimiento de tus tareas, estas apps te ayudarán.</p>
+        <p>Si te cuesta mantener el orden con las tareas, estas apps te facilitarán la vida.</p>
         <a class="button" onclick="toggleLeerMas('articulo1')">Leer más</a>
         <div id="articulo1" class="leer-mas">
-          <p><strong>Notion:</strong> Perfecta para crear listas, organizar clases y tomar apuntes con plantillas.</p>
-          <p><strong>Google Keep:</strong> Sencilla y eficaz para hacer listas rápidas, notas, e incluso recordatorios por ubicación.</p>
-          <p><strong>Trello:</strong> Muy útil para organizar trabajos en grupo. Puedes usar tableros, listas y tarjetas para seguir el progreso.</p>
-          <p><strong>Microsoft To Do:</strong> Excelente para organizar tareas diarias, con recordatorios y sincronización entre dispositivos.</p>
-          <p>Estas herramientas no solo te ayudan a ahorrar tiempo, también mejoran tu rendimiento académico con buena planificación.</p>
+          <p><strong>Notion:</strong> Ideal para apuntes, tareas, horarios y trabajo en grupo. Puedes usar plantillas para organizar tu semana, tus asignaturas o tus trabajos finales.</p>
+          <p><strong>Google Keep:</strong> Rápida, sencilla y se sincroniza con tu cuenta de Google. Te permite crear listas de tareas y añadir recordatorios, perfecto para tareas pendientes.</p>
+          <p><strong>Trello:</strong> Organiza tus proyectos escolares con tarjetas y tableros. Es muy útil para trabajos colaborativos o grandes entregas divididas por fases.</p>
+          <p><strong>Microsoft To Do:</strong> Para quienes prefieren una interfaz limpia, esta app permite organizar tus pendientes con fechas límite y categorías.</p>
+          <p>Utilizar estas herramientas te ayudará a mejorar tu productividad, evitar olvidos y cumplir con los plazos fácilmente.</p>
         </div>
       </article>
 
       <article>
         <h3>Cómo usar la inteligencia artificial para estudiar sin copiar</h3>
-        <p>La IA puede ayudarte a aprender mejor si la usas de forma responsable.</p>
+        <p>La IA puede ser tu mejor aliada para aprender, si la usas correctamente.</p>
         <a class="button" onclick="toggleLeerMas('articulo2')">Leer más</a>
         <div id="articulo2" class="leer-mas">
-          <p>ChatGPT y otras IA como Claude o Perplexity pueden explicarte temas difíciles, ayudarte a hacer esquemas, resúmenes o plantearte preguntas de examen.</p>
-          <p>No uses IA para copiar trabajos, sino para entender los temas mejor y redactarlos tú mismo con tus palabras.</p>
-          <p>Combina esto con plataformas como <strong>Khan Academy</strong> o <strong>Coursera</strong> para tener una base sólida.</p>
-          <p>Aprender con IA puede ser más eficiente si sabes preguntar bien y contrastas siempre lo que obtienes.</p>
+          <p>Herramientas como ChatGPT, Perplexity o Gemini pueden ayudarte a entender mejor los temas. Por ejemplo, puedes pedirle que te explique un concepto difícil o que te resuma un tema del libro.</p>
+          <p>Lo importante es no copiar literalmente lo que generan estas IA. Úsalo como guía, aprende de sus explicaciones y redacta con tus propias palabras.</p>
+          <p>Además, puedes usar estas IAs para practicar: pídeles que te hagan preguntas de repaso, que te generen un esquema, o que te expliquen como si fueras principiante.</p>
+          <p>Si combinas IA con técnicas de estudio activas como mapas mentales o tarjetas de memoria, tu rendimiento mejora muchísimo.</p>
         </div>
       </article>
-    </section>
-
-    <section id="afiliados">
-      <h2>Recomendaciones de productos</h2>
-      <ul>
-        <li><a href="TU_ENLACE_AFILIADO_1" target="_blank">Canva: Diseña tus presentaciones fácilmente</a></li>
-        <li><a href="TU_ENLACE_AFILIADO_2" target="_blank">Amazon: Compra tus materiales escolares con descuentos</a></li>
-      </ul>
     </section>
 
     <footer>
@@ -131,7 +119,7 @@
   </div>
 
   <div class="ad-lateral right">
-    <!-- Anuncio lateral derecho -->
+    <!-- Espacio para anuncio derecho -->
     <p>Espacio para anuncio</p>
   </div>
 
