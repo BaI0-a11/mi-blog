@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Apps para Tareas Escolares</title>
+    
+    <!-- Meta etiqueta para verificación de Google AdSense -->
+    <meta name="google-adsense-account" content="ca-pub-1296862849546596">
 
-    <!-- Google AdSense -->
+    <!-- Script para mostrar anuncios de Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1296862849546596"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 
     <style>
         body {
@@ -16,7 +19,6 @@
             padding: 0;
             display: flex;
             background: #f5f5f5;
-            min-height: 100vh;
         }
         .ad-lateral {
             width: 160px;
@@ -39,34 +41,20 @@
             margin: auto;
             background: #fff;
             padding: 20px;
-            box-sizing: border-box;
         }
-        header {
-            text-align: center;
-        }
-        h1 {
-            color: #2c3e50;
-        }
+        header { text-align: center; }
+        h1 { color: #2c3e50; }
         nav a {
             margin: 0 10px;
             text-decoration: none;
             color: #3498db;
         }
-        section {
-            margin-top: 20px;
-        }
+        section { margin-top: 20px; }
         footer {
             margin-top: 40px;
             font-size: 0.9em;
             color: #888;
             text-align: center;
-        }
-        .ad {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-            margin: 20px 0;
-            background: #f9f9f9;
         }
         a.button {
             display: inline-block;
@@ -77,24 +65,33 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        .extra-content {
+        article p {
             display: none;
             margin-top: 10px;
-            font-size: 0.95em;
             color: #333;
         }
     </style>
+
+    <script>
+        // Código para mostrar y ocultar texto al hacer click en "Leer más"
+        function toggleText(id) {
+            const p = document.getElementById(id);
+            if (p.style.display === "none" || p.style.display === "") {
+                p.style.display = "block";
+            } else {
+                p.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
 
     <div class="ad-lateral">
-        <!-- Aquí iría un anuncio lateral -->
-        <p>Anuncio lateral 1</p>
-        <!-- Puedes poner aquí el código de anuncio de Adsense u otro -->
+        <p>Anuncio lateral</p>
+        <!-- Aquí puedes poner el código del anuncio lateral 1 -->
     </div>
 
     <div class="contenido">
-
         <header>
             <h1>Apps para Tareas Escolares</h1>
             <p>Guías, IA y herramientas para estudiantes modernos</p>
@@ -105,60 +102,38 @@
 
         <section id="articulos">
             <h2>Artículos destacados</h2>
+
             <article>
                 <h3>Cómo usar ChatGPT para hacer tareas sin copiar</h3>
                 <p>Aprende a aprovechar la inteligencia artificial para ayudarte a estudiar sin riesgos de plagio.</p>
-                <a class="button" onclick="toggleContent('extra1')">Leer más</a>
-                <div id="extra1" class="extra-content">
-                    <p>ChatGPT puede ser una herramienta muy útil si la utilizas para entender conceptos, generar ideas y aprender, pero es importante no copiar el contenido directamente para evitar problemas de plagio. Usa sus respuestas como guía para complementar tus trabajos y hacer un estudio más profundo.</p>
-                </div>
+                <a class="button" onclick="toggleText('art1')">Leer más</a>
+                <p id="art1">
+                    ChatGPT puede ser una herramienta poderosa para mejorar tu comprensión y ayudarte a investigar, pero siempre debe usarse responsablemente.
+                    Aquí te mostramos cómo sacar el máximo provecho para que tus tareas sean originales y de calidad, evitando el plagio y fortaleciendo tu aprendizaje.
+                </p>
             </article>
+
             <article>
-                <h3>Las mejores apps para organizar tu estudio y mejorar tu rendimiento</h3>
-                <p>Descubre aplicaciones que te ayudan a gestionar tu tiempo, tomar notas y mantener el enfoque mientras estudias.</p>
-                <a class="button" onclick="toggleContent('extra2')">Leer más</a>
-                <div id="extra2" class="extra-content">
-                    <p>Aplicaciones como Todoist, Notion y Forest son excelentes para planificar tus tareas, organizar apuntes y evitar distracciones. Con estas herramientas podrás crear horarios de estudio, establecer metas diarias y monitorear tu progreso para alcanzar mejores resultados académicos.</p>
-                </div>
+                <h3>Organiza tus estudios con Notion: la app esencial para estudiantes</h3>
+                <p>Notion es una aplicación versátil para tomar notas, organizar tareas y gestionar proyectos.</p>
+                <a class="button" onclick="toggleText('art2')">Leer más</a>
+                <p id="art2">
+                    Con Notion, puedes crear bases de datos personalizadas, planificar tu calendario, almacenar apuntes y colaborar con compañeros en tiempo real.
+                    Te contamos trucos para sacarle el máximo provecho, mejorando tu productividad y manteniendo todo bajo control.
+                </p>
             </article>
-        </section>
 
-        <div class="ad">
-            <!-- Aquí iría un anuncio dentro del contenido -->
-            <p>Anuncio publicitario</p>
-            <!-- Inserta aquí tu código de anuncio de Adsense -->
-        </div>
-
-        <section id="afiliados">
-            <h2>Recomendaciones de productos</h2>
-            <ul>
-                <li><a href="TU_ENLACE_AFILIADO_1" target="_blank" rel="noopener noreferrer">Canva: Diseña tus trabajos fácilmente</a></li>
-                <li><a href="TU_ENLACE_AFILIADO_2" target="_blank" rel="noopener noreferrer">Amazon: Compra útiles escolares con descuento</a></li>
-            </ul>
         </section>
 
         <footer>
             <p>© 2025 Apps para Tareas Escolares - Todos los derechos reservados</p>
         </footer>
-
     </div>
 
     <div class="ad-lateral right">
-        <!-- Aquí iría otro anuncio lateral -->
-        <p>Anuncio lateral 2</p>
-        <!-- Inserta aquí otro código de anuncio de Adsense u otro -->
+        <p>Anuncio lateral</p>
+        <!-- Aquí puedes poner el código del anuncio lateral 2 -->
     </div>
-
-<script>
-    function toggleContent(id) {
-        const el = document.getElementById(id);
-        if (el.style.display === "block") {
-            el.style.display = "none";
-        } else {
-            el.style.display = "block";
-        }
-    }
-</script>
 
 </body>
 </html>
