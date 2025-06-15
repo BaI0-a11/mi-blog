@@ -1,210 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Apps para Tareas Escolares</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1296862849546596"
-        crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            min-height: 100vh;
-            background: #f5f5f5;
-            flex-direction: column;
-        }
-        /* Barra superior de anuncios */
-        .ad-superior, .ad-inferior {
-            background: #fff;
-            border-bottom: 1px solid #ddd;
-            border-top: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #555;
-        }
-        .ad-inferior {
-            border-top: none;
-            border-bottom: 1px solid #ddd;
-            margin-top: 20px;
-        }
-        /* Contenedor principal con laterales y contenido */
-        .main-container {
-            flex: 1;
-            display: flex;
-            background: #f5f5f5;
-            padding: 10px 0;
-        }
-        .ad-lateral {
-            width: 160px;
-            padding: 10px;
-            background: #fff;
-            border: 1px solid #ddd;
-            text-align: center;
-            font-size: 0.9em;
-            color: #555;
-            margin: 0 10px;
-            height: fit-content;
-        }
-        .contenido {
-            flex: 1;
-            max-width: 700px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        header { text-align: center; }
-        h1 { color: #2c3e50; }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #3498db;
-        }
-        section { margin-top: 20px; }
-        footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #888;
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-        }
-        footer a {
-            color: #3498db;
-            text-decoration: none;
-            margin-top: 10px;
-            display: inline-block;
-        }
-        a.button {
-            display: inline-block;
-            background: #3498db;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .articulo-texto {
-            max-height: 120px;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-        }
-        .articulo-texto.expandido {
-            max-height: 1000px;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Apps para Tareas Escolares</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    text-align: center;
+  }
+  h1 {
+    color: #2c3e50;
+  }
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3498db;
+  }
+  section {
+    margin-top: 20px;
+  }
+  footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #888;
+    text-align: center;
+  }
+  .ad {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+    background: #f9f9f9;
+  }
+  a.button {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .extra-text {
+    display: none;
+    margin-top: 10px;
+    color: #444;
+  }
+</style>
 </head>
 <body>
 
-<div class="ad-superior">
-    <p>Anuncio superior horizontal</p>
+<header>
+  <h1>Apps para Tareas Escolares</h1>
+  <p>Guías, IA y herramientas para estudiantes modernos</p>
+  <nav>
+    <a href="#articulos">Artículos</a>
+  </nav>
+</header>
+
+<section id="articulos">
+  <h2>Artículos destacados</h2>
+
+  <article>
+    <h3>Cómo usar ChatGPT para hacer tareas sin copiar</h3>
+    <p>Aprende a aprovechar la inteligencia artificial para ayudarte a estudiar sin riesgos de plagio.</p>
+    <div class="extra-text" id="extra1">
+      ChatGPT puede ser una herramienta valiosa si se usa correctamente. Utilízalo para entender conceptos, generar ideas y aclarar dudas. Sin embargo, evita copiar y pegar directamente, ya que eso puede ser plagio. La clave es usarlo como apoyo para tu aprendizaje, reformulando y analizando las respuestas.
+    </div>
+    <a class="button" onclick="toggleExtra('extra1')">Leer más</a>
+  </article>
+
+  <article>
+    <h3>Las mejores apps para organizar tu estudio</h3>
+    <p>Descubre varias aplicaciones útiles para mejorar tu productividad y organización al estudiar.</p>
+    <div class="extra-text" id="extra2">
+      Algunas de las apps más recomendadas incluyen:<br>
+      - **Notion**: para crear bases de datos, notas y organizar proyectos.<br>
+      - **Trello**: gestión visual de tareas mediante tableros y tarjetas.<br>
+      - **Forest**: técnica Pomodoro para mantener la concentración.<br>
+      - **Google Keep**: notas rápidas sincronizadas con tu cuenta Google.<br>
+      Usar estas herramientas te ayudará a planificar y cumplir tus metas académicas de forma eficiente.
+    </div>
+    <a class="button" onclick="toggleExtra('extra2')">Leer más</a>
+  </article>
+
+</section>
+
+<div class="ad">
+  <!-- Aquí iría el código de Google AdSense o cualquier anuncio -->
+  <p>Anuncio publicitario</p>
 </div>
 
-<div class="main-container">
-    <div class="ad-lateral">
-        <p>Anuncio lateral izquierdo</p>
-    </div>
+<section id="afiliados">
+  <h2>Recomendaciones de productos</h2>
+  <ul>
+    <li>Canva: Diseña tus trabajos fácilmente</li>
+    <li>Amazon: Compra útiles escolares con descuento</li>
+  </ul>
+</section>
 
-    <div class="contenido">
-
-        <header>
-            <h1>Apps para Tareas Escolares</h1>
-            <p>Guías, IA y herramientas para estudiantes modernos</p>
-            <nav>
-                <a href="#articulos">Artículos</a>
-            </nav>
-        </header>
-
-        <section id="articulos">
-            <h2>Artículos destacados</h2>
-            <article>
-                <h3>Cómo usar ChatGPT para hacer tareas sin copiar</h3>
-                <div class="articulo-texto" id="art1-texto">
-                    <p>Aprende a aprovechar la inteligencia artificial para ayudarte a estudiar sin riesgos de plagio. ChatGPT puede ser una gran herramienta para generar ideas, mejorar redacciones y entender conceptos complejos. Sin embargo, es importante usarlo como apoyo y no como sustituto del trabajo personal para evitar sanciones académicas.</p>
-                    <p>Te explicamos cómo formular preguntas efectivas, cómo verificar la información y cómo incorporar las respuestas en tus tareas para un aprendizaje real y honesto.</p>
-                </div>
-                <a class="button" onclick="toggleArticulo('art1-texto', this)">Leer más</a>
-            </article>
-            <article>
-                <h3>Las mejores apps gratuitas para estudiar y organizarse</h3>
-                <div class="articulo-texto" id="art2-texto">
-                    <p>En este artículo repasamos varias aplicaciones gratuitas que te ayudarán a estudiar de forma eficiente y organizada. Desde apps para tomar notas, como Evernote y Microsoft OneNote, hasta gestores de tareas como Todoist o Trello, ideales para planificar tus entregas y proyectos.</p>
-                    <p>También te mostramos herramientas para hacer mapas mentales, gestionar bibliografía y concentrarte con técnicas Pomodoro, todas disponibles sin coste para estudiantes.</p>
-                    <p>Estas apps no solo mejoran tu productividad, sino que también te permiten estudiar desde cualquier dispositivo, incluyendo teléfonos, tablets y ordenadores.</p>
-                </div>
-                <a class="button" onclick="toggleArticulo('art2-texto', this)">Leer más</a>
-            </article>
-        </section>
-
-        <div class="ad">
-            <p>Anuncio central</p>
-        </div>
-
-        <section id="afiliados">
-            <h2>Recomendaciones de productos</h2>
-            <ul>
-                <li>Canva: Diseña tus trabajos fácilmente</li>
-                <li>Amazon: Compra útiles escolares con descuento</li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>© 2025 Apps para Tareas Escolares - Todos los derechos reservados</p>
-            <a href="#privacidad" onclick="mostrarPrivacidad()">Política de Privacidad</a>
-
-            <div id="privacidad" style="display:none; text-align:left; margin-top:20px; background:#f9f9f9; padding:15px; border:1px solid #ddd;">
-                <h2>Política de Privacidad</h2>
-                <p>En trucosestudio.ddns.net, la privacidad de nuestros visitantes es extremadamente importante para nosotros. Esta política de privacidad describe los tipos de información personal que se recopilan y se registran en nuestro sitio, y cómo la usamos.</p>
-
-                <h3>Archivos de registro</h3>
-                <p>Al igual que muchos otros sitios web, nuestro sitio utiliza archivos de registro. Estos archivos simplemente registran a los visitantes del sitio, una práctica común y parte del análisis de servicios de alojamiento. La información en los archivos de registro incluye direcciones IP, tipo de navegador, proveedor de servicios de Internet (ISP), fecha y hora, páginas de referencia y salida, y posiblemente el número de clics.</p>
-
-                <h3>Cookies y Web Beacons</h3>
-                <p>Usamos cookies para almacenar información sobre las preferencias de los visitantes y las páginas que el usuario accede o visita. Esta información se utiliza para optimizar la experiencia del usuario personalizando el contenido de nuestras páginas.</p>
-
-                <h3>Publicidad de terceros</h3>
-                <p>Algunos de nuestros socios publicitarios pueden usar cookies y web beacons en nuestro sitio. Google, como proveedor asociado, utiliza cookies para mostrar anuncios. El uso que hace Google de la cookie de DART le permite mostrar anuncios a los usuarios basados en su visita a nuestro sitio y otros sitios en Internet.</p>
-
-                <h3>Consentimiento</h3>
-                <p>Al utilizar nuestro sitio web, usted acepta nuestra política de privacidad y está de acuerdo con sus términos.</p>
-
-                <h3>Actualizaciones</h3>
-                <p>Esta política de privacidad puede cambiar en el futuro. Cualquier cambio será publicado en esta página.</p>
-            </div>
-        </footer>
-
-    </div>
-
-    <div class="ad-lateral">
-        <p>Anuncio lateral derecho</p>
-    </div>
-</div>
-
-<div class="ad-inferior">
-    <p>Anuncio inferior horizontal</p>
-</div>
+<footer>
+  <p>© 2025 Apps para Tareas Escolares - Todos los derechos reservados</p>
+</footer>
 
 <script>
-function toggleArticulo(id, boton) {
-    const articulo = document.getElementById(id);
-    if (articulo.classList.contains('expandido')) {
-        articulo.classList.remove('expandido');
-        boton.textContent = 'Leer más';
+  function toggleExtra(id) {
+    const elem = document.getElementById(id);
+    if (elem.style.display === "none" || elem.style.display === "") {
+      elem.style.display = "block";
     } else {
-        articulo.classList.add('expandido');
-        boton.textContent = 'Leer menos';
+      elem.style.display = "none";
     }
-}
+  }
+</script>
 
-function mostrarPrivacidad() {
-    const div = document.getElementById('privacidad');
-    if(div.style.display === 'none') {
-        div.style.display = 'block';
-        window.location.hash = 'privacidad';
-    } else {
-        div.style.display = 'none';
-        window.location.ha
+</body>
+</html>
