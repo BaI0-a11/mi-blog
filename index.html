@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Apps para Tareas Escolares</title>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1296862849546596"
+     crossorigin="anonymous"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,32 +22,39 @@
             width: 160px;
             padding: 10px;
             background: #fff;
-            border: 1px solid #ddd;
+            border-right: 1px solid #ddd;
             text-align: center;
-            box-sizing: border-box;
         }
         .ad-lateral.right {
-            border-left: none;
+            border-right: none;
+            border-left: 1px solid #ddd;
         }
-        .main-container {
+        .ad-lateral p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .contenido {
             flex: 1;
             max-width: 700px;
             margin: auto;
             background: #fff;
             padding: 20px;
             box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
-        header { text-align: center; }
-        h1 { color: #2c3e50; }
+        header {
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
         nav a {
             margin: 0 10px;
             text-decoration: none;
             color: #3498db;
         }
-        section { margin-top: 20px; flex-grow: 1; }
+        section {
+            margin-top: 20px;
+        }
         footer {
             margin-top: 40px;
             font-size: 0.9em;
@@ -56,41 +68,32 @@
             margin: 20px 0;
             background: #f9f9f9;
         }
-        article {
-            margin-bottom: 25px;
-        }
         a.button {
             display: inline-block;
             background: #3498db;
             color: white;
-            padding: 8px 15px;
+            padding: 10px 15px;
             text-decoration: none;
             border-radius: 5px;
             cursor: pointer;
-            user-select: none;
         }
         .extra-content {
-            margin-top: 10px;
             display: none;
-            color: #444;
-            line-height: 1.5;
-            border-left: 3px solid #3498db;
-            padding-left: 10px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            color: #333;
         }
     </style>
 </head>
 <body>
 
     <div class="ad-lateral">
-        <!-- Anuncio lateral izquierdo -->
+        <!-- Aquí iría un anuncio lateral -->
         <p>Anuncio lateral 1</p>
+        <!-- Puedes poner aquí el código de anuncio de Adsense u otro -->
     </div>
 
-    <div class="main-container">
-        <div class="ad">
-            <!-- Anuncio arriba del contenido -->
-            <p>Anuncio principal arriba</p>
-        </div>
+    <div class="contenido">
 
         <header>
             <h1>Apps para Tareas Escolares</h1>
@@ -102,53 +105,57 @@
 
         <section id="articulos">
             <h2>Artículos destacados</h2>
-
             <article>
                 <h3>Cómo usar ChatGPT para hacer tareas sin copiar</h3>
                 <p>Aprende a aprovechar la inteligencia artificial para ayudarte a estudiar sin riesgos de plagio.</p>
                 <a class="button" onclick="toggleContent('extra1')">Leer más</a>
                 <div id="extra1" class="extra-content">
-                    <p>ChatGPT puede ser una herramienta poderosa si la usas correctamente: genera ideas, te ayuda a entender conceptos, o a practicar idiomas. Pero ojo, no copies el texto tal cual, usa lo que genera para entender y luego escribe con tus palabras para evitar problemas de plagio.</p>
-                    <p>Además, puedes pedirle explicaciones paso a paso para resolver problemas matemáticos, o solicitar ejemplos para mejorar tus redacciones. Combina su ayuda con tu esfuerzo para aprender realmente y no depender sólo de la IA.</p>
-                    <p>Recuerda siempre revisar y verificar la información generada para evitar errores y confusiones, y usa ChatGPT como una guía, no como una solución final.</p>
+                    <p>ChatGPT puede ser una herramienta muy útil si la utilizas para entender conceptos, generar ideas y aprender, pero es importante no copiar el contenido directamente para evitar problemas de plagio. Usa sus respuestas como guía para complementar tus trabajos y hacer un estudio más profundo.</p>
                 </div>
             </article>
-
             <article>
-                <h3>Apps imprescindibles para organizar tus tareas y estudios</h3>
-                <p>Descubre aplicaciones que te ayudarán a planificar, tomar notas y mantenerte enfocado.</p>
+                <h3>Las mejores apps para organizar tu estudio y mejorar tu rendimiento</h3>
+                <p>Descubre aplicaciones que te ayudan a gestionar tu tiempo, tomar notas y mantener el enfoque mientras estudias.</p>
                 <a class="button" onclick="toggleContent('extra2')">Leer más</a>
                 <div id="extra2" class="extra-content">
-                    <p>Aplicaciones como Notion, Todoist o Microsoft OneNote son ideales para gestionar tu tiempo y organizar proyectos. Puedes crear listas, calendarizar fechas de entrega y tomar apuntes sincronizados con todos tus dispositivos.</p>
-                    <p>Además, algunas apps tienen funciones para bloquear distracciones y mejorar la concentración, ayudándote a ser más productivo. Por ejemplo, Forest te ayuda a no usar el móvil mientras estudias plantando árboles virtuales.</p>
-                    <p>También hay apps para crear mapas mentales como MindMeister, perfectas para visualizar ideas y mejorar la memorización. Explora y encuentra las que se adapten a tu estilo de estudio.</p>
-                    <p>No olvides aprovechar las versiones gratuitas y tutoriales online para aprender a usar estas herramientas eficientemente.</p>
+                    <p>Aplicaciones como Todoist, Notion y Forest son excelentes para planificar tus tareas, organizar apuntes y evitar distracciones. Con estas herramientas podrás crear horarios de estudio, establecer metas diarias y monitorear tu progreso para alcanzar mejores resultados académicos.</p>
                 </div>
             </article>
         </section>
 
         <div class="ad">
-            <!-- Anuncio abajo del contenido -->
-            <p>Anuncio principal abajo</p>
+            <!-- Aquí iría un anuncio dentro del contenido -->
+            <p>Anuncio publicitario</p>
+            <!-- Inserta aquí tu código de anuncio de Adsense -->
         </div>
+
+        <section id="afiliados">
+            <h2>Recomendaciones de productos</h2>
+            <ul>
+                <li><a href="TU_ENLACE_AFILIADO_1" target="_blank" rel="noopener noreferrer">Canva: Diseña tus trabajos fácilmente</a></li>
+                <li><a href="TU_ENLACE_AFILIADO_2" target="_blank" rel="noopener noreferrer">Amazon: Compra útiles escolares con descuento</a></li>
+            </ul>
+        </section>
 
         <footer>
             <p>© 2025 Apps para Tareas Escolares - Todos los derechos reservados</p>
         </footer>
+
     </div>
 
     <div class="ad-lateral right">
-        <!-- Anuncio lateral derecho -->
+        <!-- Aquí iría otro anuncio lateral -->
         <p>Anuncio lateral 2</p>
+        <!-- Inserta aquí otro código de anuncio de Adsense u otro -->
     </div>
 
 <script>
     function toggleContent(id) {
-        const content = document.getElementById(id);
-        if (content.style.display === "block") {
-            content.style.display = "none";
+        const el = document.getElementById(id);
+        if (el.style.display === "block") {
+            el.style.display = "none";
         } else {
-            content.style.display = "block";
+            el.style.display = "block";
         }
     }
 </script>
