@@ -3,15 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Apps para Tareas Escolares</title>
-
-  <!-- Meta etiqueta para Google AdSense -->
   <meta name="google-adsense-account" content="ca-pub-1296862849546596">
-
-  <!-- Script AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1296862849546596"
-    crossorigin="anonymous"></script>
-
+  <title>Apps para Tareas Escolares</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -20,7 +13,6 @@
       display: flex;
       background: #f5f5f5;
     }
-
     .ad-lateral {
       width: 160px;
       padding: 10px;
@@ -28,17 +20,14 @@
       border-right: 1px solid #ddd;
       text-align: center;
     }
-
     .ad-lateral.right {
       border-right: none;
       border-left: 1px solid #ddd;
     }
-
     .ad-lateral p {
       font-size: 0.9em;
       color: #555;
     }
-
     .contenido {
       flex: 1;
       max-width: 700px;
@@ -46,33 +35,20 @@
       background: #fff;
       padding: 20px;
     }
-
-    header {
-      text-align: center;
-    }
-
-    h1 {
-      color: #2c3e50;
-    }
-
+    header { text-align: center; }
+    h1 { color: #2c3e50; }
     nav a {
       margin: 0 10px;
       text-decoration: none;
       color: #3498db;
     }
-
-    section {
-      margin-top: 20px;
+    section { margin-top: 20px; }
+    article { margin-bottom: 30px; }
+    .leer-mas {
+      display: none;
+      margin-top: 10px;
     }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #888;
-      text-align: center;
-    }
-
-    a.button {
+    .button {
       display: inline-block;
       background: #3498db;
       color: white;
@@ -80,64 +56,73 @@
       text-decoration: none;
       border-radius: 5px;
       cursor: pointer;
-      margin-top: 10px;
     }
-
-    article p.extra {
-      display: none;
-      margin-top: 10px;
-      color: #333;
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+      text-align: center;
     }
   </style>
-
   <script>
-    function toggleText(id) {
-      const p = document.getElementById(id);
-      if (p.style.display === "none" || p.style.display === "") {
-        p.style.display = "block";
+    function toggleLeerMas(id) {
+      var elem = document.getElementById(id);
+      if (elem.style.display === "none") {
+        elem.style.display = "block";
       } else {
-        p.style.display = "none";
+        elem.style.display = "none";
       }
     }
   </script>
 </head>
-
 <body>
+
   <div class="ad-lateral">
-    <p>Anuncio lateral</p>
-    <!-- Pega aquí tu bloque de anuncio AdSense lateral -->
+    <!-- Anuncio lateral izquierdo -->
+    <p>Espacio para anuncio</p>
   </div>
 
   <div class="contenido">
     <header>
       <h1>Apps para Tareas Escolares</h1>
-      <p>Guías, herramientas y consejos para estudiantes modernos</p>
-      <nav>
-        <a href="#articulos">Artículos</a>
-      </nav>
+      <p>Guías, IA y herramientas para estudiantes modernos</p>
     </header>
 
     <section id="articulos">
       <h2>Artículos destacados</h2>
 
       <article>
-        <h3>Cómo usar ChatGPT para hacer tareas sin copiar</h3>
-        <p>Descubre cómo utilizar ChatGPT como asistente de estudio para mejorar tus trabajos sin caer en el plagio.</p>
-        <a class="button" onclick="toggleText('art1')">Leer más</a>
-        <p class="extra" id="art1">
-          ChatGPT puede ayudarte a organizar ideas, resumir textos, explicar conceptos difíciles o generar ejemplos, sin necesidad de copiar literalmente. Por ejemplo, si tienes que hacer un resumen sobre la Segunda Guerra Mundial, puedes pedirle a ChatGPT que lo explique en lenguaje sencillo o en puntos clave, y luego tú lo reescribes con tus palabras. Esto no solo evita el plagio, sino que refuerza tu comprensión. Además, puedes usarlo para repasar, practicar exámenes o crear guías de estudio personalizadas. Eso sí, recuerda siempre revisar y modificar el contenido antes de entregarlo. ¡Es una herramienta, no una muleta!
-        </p>
+        <h3>Las mejores apps para organizar tus tareas y trabajos</h3>
+        <p>Si te cuesta mantener un seguimiento de tus tareas, estas apps te ayudarán.</p>
+        <a class="button" onclick="toggleLeerMas('articulo1')">Leer más</a>
+        <div id="articulo1" class="leer-mas">
+          <p><strong>Notion:</strong> Perfecta para crear listas, organizar clases y tomar apuntes con plantillas.</p>
+          <p><strong>Google Keep:</strong> Sencilla y eficaz para hacer listas rápidas, notas, e incluso recordatorios por ubicación.</p>
+          <p><strong>Trello:</strong> Muy útil para organizar trabajos en grupo. Puedes usar tableros, listas y tarjetas para seguir el progreso.</p>
+          <p><strong>Microsoft To Do:</strong> Excelente para organizar tareas diarias, con recordatorios y sincronización entre dispositivos.</p>
+          <p>Estas herramientas no solo te ayudan a ahorrar tiempo, también mejoran tu rendimiento académico con buena planificación.</p>
+        </div>
       </article>
 
       <article>
-        <h3>Organiza tus estudios con Notion: la app esencial para estudiantes</h3>
-        <p>Notion te permite tomar notas, planificar tareas y tenerlo todo en un solo lugar.</p>
-        <a class="button" onclick="toggleText('art2')">Leer más</a>
-        <p class="extra" id="art2">
-          Notion es una de las herramientas más versátiles para estudiantes. Puedes usarla como agenda escolar, crear un calendario de entregas, tomar apuntes con formato enriquecido, y hasta compartir páginas con tus compañeros. Su sistema de bloques te permite añadir listas, tablas, imágenes, enlaces, y mucho más. Un uso muy común es tener un panel con tus materias, donde puedes añadir tareas pendientes, fechas de exámenes, enlaces útiles o incluso subir archivos. Al estar sincronizado en la nube, puedes acceder desde tu móvil o PC. También existen plantillas prediseñadas que te ahorran mucho tiempo.
-        </p>
+        <h3>Cómo usar la inteligencia artificial para estudiar sin copiar</h3>
+        <p>La IA puede ayudarte a aprender mejor si la usas de forma responsable.</p>
+        <a class="button" onclick="toggleLeerMas('articulo2')">Leer más</a>
+        <div id="articulo2" class="leer-mas">
+          <p>ChatGPT y otras IA como Claude o Perplexity pueden explicarte temas difíciles, ayudarte a hacer esquemas, resúmenes o plantearte preguntas de examen.</p>
+          <p>No uses IA para copiar trabajos, sino para entender los temas mejor y redactarlos tú mismo con tus palabras.</p>
+          <p>Combina esto con plataformas como <strong>Khan Academy</strong> o <strong>Coursera</strong> para tener una base sólida.</p>
+          <p>Aprender con IA puede ser más eficiente si sabes preguntar bien y contrastas siempre lo que obtienes.</p>
+        </div>
       </article>
+    </section>
 
+    <section id="afiliados">
+      <h2>Recomendaciones de productos</h2>
+      <ul>
+        <li><a href="TU_ENLACE_AFILIADO_1" target="_blank">Canva: Diseña tus presentaciones fácilmente</a></li>
+        <li><a href="TU_ENLACE_AFILIADO_2" target="_blank">Amazon: Compra tus materiales escolares con descuentos</a></li>
+      </ul>
     </section>
 
     <footer>
@@ -146,8 +131,9 @@
   </div>
 
   <div class="ad-lateral right">
-    <p>Anuncio lateral</p>
-    <!-- Pega aquí otro bloque de anuncio AdSense lateral -->
+    <!-- Anuncio lateral derecho -->
+    <p>Espacio para anuncio</p>
   </div>
+
 </body>
 </html>
